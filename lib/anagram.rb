@@ -12,8 +12,8 @@ class Anagram
     array.each { |words|
       if words.split("").sort == @word.split("").sort
         anagrams << words
-      }
-    end
+      end
+    }
     anagrams
   end
 
