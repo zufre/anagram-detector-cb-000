@@ -4,8 +4,10 @@ class Anagram
     @word = word
   end
   def match(list)
-    list.map do |word|
-      word.split("").sort.join("") == @word.split.split("").sort.join("")
+    newArr = []
+    list.each do |word|
+      if word.split("").sort.join("") == @word.split.split("").sort.join("")
+        newArr.push(word)
     end
   end
 end
