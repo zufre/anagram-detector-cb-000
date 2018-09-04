@@ -10,5 +10,6 @@ class Anagram
         newArr.push(word)
       end
     end
+    newArr
   end
 end
