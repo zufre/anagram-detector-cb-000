@@ -8,6 +8,7 @@ class Anagram
     list.each do |word|
       if word.split("").sort.join("") == @word.split.split("").sort.join("")
         newArr.push(word)
+      end
     end
   end
 end
