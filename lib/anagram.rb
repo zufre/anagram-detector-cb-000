@@ -6,8 +6,8 @@ class Anagram
   def match(list)
     newArr = []
     list.each do |word|
-      if word.split("").sort.join("") == @word.split("").sort.join("")
-        newArr.push(word)
+      if word.split("").sort == @word.split("").sort
+        newArr << word
       end
     end
     newArr
