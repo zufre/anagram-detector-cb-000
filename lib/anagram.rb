@@ -4,12 +4,12 @@ class Anagram
     @word = word
   end
   def match(list)
-    newArr = []
+    anagrams = []
     list.each do |word|
       if word.split("").sort == @word.split("").sort
-        newArr << word
+        anagrams << word
       end
     end
-    newArr
+    anagrams
   end
 end
