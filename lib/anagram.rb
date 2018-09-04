@@ -1,20 +1,15 @@
-# Your code goes here!
 class Anagram
-
   attr_accessor :word
-
   def initialize(word)
     @word = word
   end
-
-  def match(array)
+  def match(list)
     anagrams = []
-    array.each { |words|
-      if words.split("").sort == @word.split("").sort
-        anagrams << words
+    list.each do |word|
+      if word.split("").sort == @word.split("").sort
+        anagrams << word
       end
-    }
+    end
     anagrams
   end
-
 end
