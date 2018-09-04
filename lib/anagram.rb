@@ -1,20 +1,11 @@
-# Your code goes here!
-class Anagram
-
+class Anagram 
   attr_accessor :word
-
   def initialize(word)
     @word = word
   end
-
-  def match(array)
-    anagrams = []
-    array.each { |words|
-      if words.split("").sort == @word.split("").sort
-        anagrams << words
-      end
-    }
-    anagrams
+  def match(list)
+    list.map do |word|
+      word.split.sort.join == @word.split.sort.join
+    end
   end
-
 end
